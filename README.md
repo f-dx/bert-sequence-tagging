@@ -1,18 +1,13 @@
-# bert-sequence-tagging
-基于BERT的中文序列标注
+Sequence labeling based on BERT
 
-BERT的一作Jacob说他不准备放出序列标注的代码，不过你可以在issues中看到Jacob参与的讨论。
+Jacob's work, Jacob, said he is not prepared to release the code for the sequence tag, but you can see the discussion of Jacob's participation in the issue.
 
-该Repo不是可以直接运行的，不过如果你真的需要这个实现，很大程度上应该一看就能明白。
+The Repo is not directly executable, but if you really need this implementation, you should understand it to a large extent.
 
-sequence tagging可以用在很多地方，NER, POS等，也许最近的天池瑞金比赛也可以尝试，Kaggle最新的一个文本分类的比赛也可以尝试，不过Kaggle的这个新赛直接使用Jacob公布的代码应该不需要修改很多地方。
+Sequence tagging can be used in many places, NER, POS, etc. Maybe the recent Tianchi Ruijin game can also be tried. Kaggle's latest text classification game can also be tried, but Kaggle's new game directly using Jacob's published code should not be needed. Modify a lot of places.
 
-基于google-bert源代码，写sequence tagging模块，并在IJCNLP的CGED数据上做了初步测试，实验结果如下图所示。
+Based on the google-bert source code, write the sequence tagging module and make a preliminary test on the CGED data of IJCNLP. The experimental results are shown in the figure below.
 
-![实验结果](http://wx1.sinaimg.cn/mw690/aba7d18bly1fx0zcmf50qj20fr0th79n.jpg)
+Among them, the top picture is the result of the code C++ released by a group of Harbin Institute of Technology in 2017; the middle picture is the result I reproduced with Tensorflow; the figure below is a result obtained by fine-tuning based on BERT.
 
-其中，最上图是2017年哈工大的一个组公布的代码C++跑出的结果；中图是我用Tensorflow复现出的结果；下图是基于BERT做fine-tuning得到的一个结果。
-
-从结果上来看，实现上暂时看起来似乎没有问题。
-
-
+From the results, it seems that there is no problem in the implementation.
